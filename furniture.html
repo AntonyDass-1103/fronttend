@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopZone - furniture</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="furniturePage">
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">ShopZone</div>
+      <div class="search-area">
+        <input type="text" id="searchBox" placeholder="Search for products..." />
+        <button id="searchBtn">Search</button>
+        <button id="clearSearch">✕</button>
+      </div>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-btn">🛒 Cart (<span id="cartCount">0</span>)</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="categories-wrapper">
+    <div id="categories" class="categories"></div>
+  </div>
+
+  <div id="bannerSlider" class="banner-slider"></div>
+
+  <main class="all-products">
+    <div class="section-header">
+      <h2 id="categoryHeader">furniture</h2>
+    </div>
+    <section class="product-grid" id="productGrid"></section>
+  </main>
+
+  <footer>© 2025 ShopZone. All rights reserved.</footer>
+
+  <script src="js/script.js" defer></script>
+  <script>
+    const url = new URL(window.location.href);
+    url.searchParams.set('cat', 'furniture');
+    history.replaceState(null, '', url.toString());
+  </script>
+</body>
+</html>

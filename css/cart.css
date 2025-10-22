@@ -1,0 +1,126 @@
+/* ===== Base ===== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f6f7fb;
+  color: #222;
+  padding-top: 70px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  background: linear-gradient(90deg, #2f6bff, #1a4dcc);
+  color: #fff;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { font-weight: 700; }
+.back-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background: #ff9800;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* ===== Cart Container ===== */
+.cart-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.cart-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.cart-item-details p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #0b9254;
+}
+
+.remove-btn {
+  background: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #e64545;
+}
+
+/* Summary */
+.cart-summary {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.clear-btn {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background: #333;
+}
